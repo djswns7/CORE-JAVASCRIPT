@@ -1,0 +1,8 @@
+body{
+  display: block;
+}
+body h1{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
