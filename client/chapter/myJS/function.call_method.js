@@ -1,8 +1,3 @@
-
-
-
-
-
 var title = "환영합니다.";
 var house = {
     title: "집이예요~",
