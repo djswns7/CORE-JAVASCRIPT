@@ -2,42 +2,71 @@
 /* Logical Operators                                                      */
 /* ---------------------------------------------------------------------- */
 
+let age = 20;
+
+
 let a = 10;
 let b = '';
 let value = Boolean(b);
 
-
-let age =20;
-
-// age >= 14 && age <=90?;
-
-
-
-
 // 논리곱(그리고) 연산자
-let AandB;
+let AandB = a && b;
 
 // 논리합(또는) 연산자
-let AorB;
+let AorB = a || b;
 
 // 부정 연산자
-let reverseValue;
-
+let reverseValue = !value;
 
 // 조건 처리
 
 // 첫번째 Falsy를 찾는 연산 (&&)
-let whichFalsy;
+let whichFalsy = true && ' ' && [] && { thisIsFalsy: false };
 
 // 첫번째 Truthy를 찾는 연산 (||)
-let whichTruthy;
+let whichTruthy = false || '' || [2, 3].length || { thisIsTruthy: true };
 
-let user = 'wj';
-let pw = '국룰';
 
-let curId = prompt('아이디를 입력해 주세요','아이디 조건 없음').toLowerCase();
-// let curPw= prompt('비밀번호를를 입력해 주세요','*****');
 
-user == curId ? 
-  (pw == prompt('비밀번호를를 입력해 주세요','*****') ? console.log('로그인 성공') : console.log('일치하는 비밀번호가 없습니다.')):
-  console.log('일치하는 아이디가 없습니다.');
+let userName = prompt('사용자 아이디를 입력해주세요.','');
+
+// console.log(userName);
+if(userName?.toLowerCase() === 'admin'){
+
+  let pw = prompt('비밀번호를 입력해 주세요.','');
+
+  if(pw?.toLowerCase() === 'themaster'){
+    console.log('환영합니다.');
+  }else{
+    console.log('취소되었습니다.');
+  }
+}else if(userName.replace(/\s*/g,'') === '' || userName === null){
+  console.log('취소했습니다.');
+}else{
+  console.log('인증되지 않은 사용자 입니다.');
+}
+
+
+
+
+// console.log(userName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
