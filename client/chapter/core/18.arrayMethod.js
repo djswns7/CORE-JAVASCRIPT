@@ -201,6 +201,3 @@ console.log(nameArr.join('/'));
 
 
 
-
-
-
