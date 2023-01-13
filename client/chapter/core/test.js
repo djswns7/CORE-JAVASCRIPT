@@ -199,6 +199,10 @@ let user = {
 };
 
 
+sum()
+
+globalThis == this
+
 
 
 

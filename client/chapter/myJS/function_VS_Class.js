@@ -63,5 +63,6 @@ bookModel3.getdata();
 // setData 메서드를 사용해 데이터 업데이트 하기
 bookModel3.setData([...bookModel3, { id: 'book-2', title: '참 괜찮은 태도' }]);
 
+document.getElementById()
 
-
+getNode

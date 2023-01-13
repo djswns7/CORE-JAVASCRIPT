@@ -1,11 +1,12 @@
 function addClass(node,className) {
-  let curNode = getNode(node);
+  if(typeof node === 'string') node = getNode(node);
+  // node = getNode(node);
 
   if(typeof className != 'string'){
     throw new typeError('addClass 함수의 두 번째 인자는 문자타입 이어야 합니다.');
   }
 
-  return curNode.classList.add(className);
+  return node.classList.add(className);
 }
 
 function removeClass(node,className) {
