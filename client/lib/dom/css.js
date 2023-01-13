@@ -1,7 +1,6 @@
-import { getNode } from "./getNode.js";
-import { syntaxError, typeError } from "../error/index.js";
-// import {  } from "./";
 
+import { getNode } from "./getNode.js";
+import { typeError, syntaxError } from "../error/index.js";
 
 
 export function addClass(node,className){
@@ -41,8 +40,6 @@ export function toggleClass(node,className){
 
   node.classList.toggle(className)
 }
-
-
 
 
 

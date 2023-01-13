@@ -1,7 +1,5 @@
 
 import { getNode } from "./getNode.js";
-import { typeError } from "../error/index.js";
-
 
 /* 
 
@@ -73,6 +71,8 @@ const attr = (function(){
 attr()
 
  */
+
+
 
 function getAttr(node, prop) {
   // node = '.first'
