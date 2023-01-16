@@ -1,4 +1,7 @@
-import { typeError } from "../error";
+
+
+
+import { typeError } from "../error/index.js";
 
 
 export function getRandom(n) {
