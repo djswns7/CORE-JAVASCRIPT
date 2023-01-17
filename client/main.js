@@ -8,6 +8,7 @@ import {
   getNode, 
   getNodes,
   invisibleElement,
+  memo,
   visibleElement
  } from "./lib/index.js";
 
@@ -31,7 +32,7 @@ const [rollingDiceButton,recordButton,resetButton] = getNodes('.buttonGroup > bu
 // const recordButton = getNode('.buttonGroup > button:nth-child(2)');
 // const resetButton = getNode('.buttonGroup > button:nth-child(3)');
 
-
+// memo('@tbody',()=>getNode('.recordListWrapper tbody'));
 
 let count = 0;
 let curDiceNum;
